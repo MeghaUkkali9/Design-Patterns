@@ -52,9 +52,9 @@ public class Cash : IPayment
     }
 }
 
-class Program
+public class Program
 {
-    static void Main()
+    private static void MainDemo(string[] args)
     {
         IPayment payment = SimpleFactoryPattern.CreatePayment(PaymentType.Credit);
         payment.MakePayment();
